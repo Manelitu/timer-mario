@@ -1,0 +1,118 @@
+:root {
+    --primary-color: #FC9838;
+    --secondary-color: #D0510C;
+    --start-color: #80D00F;
+    --start-color-hover: #6ca023;
+    --pause-color: #e81010; 
+    --pause-color-hover: #bd0606;
+    --stop-color-hover: #c4c6c9;
+}
+
+h1, p {
+    text-transform: uppercase;
+    font-family: "Press Start 2P" ;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    background-image: url("../img/background.jpg");
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: safe center;
+    align-items: center;
+}
+
+.black-square {
+    width: 5px;
+    height: 5px;
+    box-shadow: 1px 1px 1px;
+    background-color: black;
+    z-index: 1;
+    position: absolute; 
+}
+
+.black-square:nth-child(1){
+    margin-right: 380px;
+    margin-bottom: 180px;
+}
+
+.black-square:nth-child(2){
+    margin-left: 380px;
+    margin-bottom: 180px;
+}
+
+.black-square:nth-child(3){
+    margin-left: 380px;
+    margin-top: 180px;
+}
+
+.black-square:nth-child(4){
+    margin-right: 380px;
+    margin-top: 180px;
+}
+
+.div-timer {
+    margin-bottom: 100px;
+    width: 400px;
+    height: 200px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 20px;
+    box-shadow: 5px 5px 1px, -5px -5px 1px #D0510C;
+   
+}
+
+.timer {
+    font-size: 2.6em;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Press Start 2P";
+    border: solid;
+
+}
+
+.paused {
+    color: #d60000;
+}
+
+.started {
+    color: #3f6a02;
+}
+
+.start {
+    background-color: var(--start-color);
+   
+}
+
+.start:hover {
+    background-color: var(--start-color-hover);
+}
+
+.pause {
+    background-color: var(--pause-color);
+}
+
+.pause:hover {
+    background-color: var(--pause-color-hover);
+}
+
+.stop:hover {
+    background-color: var(--stop-color-hover);
+}
